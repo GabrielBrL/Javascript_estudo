@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Exercício 8.c</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="../img/exerc.jpg" alt="Exercícios">
+            </div>
+
+            <div class="col-sm-8" id="divExecucao">
+                <h1>Herbie: Controle de Serviços</h1>
+
+                <p><label for="inputServico">Serviço - Veículo: </label>
+                    <input type="text" id="inputServico" class="form-control" autofocus>
+                </p>
+
+                <p>
+                    <input type="button" value="Adicionar Serviço" id="btnAdicionar" class="btn btn-primary">
+                    <input type="button" value="Executar Serviço" id="btnExecutar" class="btn btn-danger">
+                </p>
+
+                <h3> Serviços Pendentes:
+                    <span id="outPendentes"></span>
+                </h3>
+                <p class="bg-danger text-white pbutton">&nbsp; Serviço em Execução:</p>
+                <h3>
+                    <pre id="outExecucao"></pre>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <script src="../js/ex8_c.js"></script>
+</body>
+
+</html>

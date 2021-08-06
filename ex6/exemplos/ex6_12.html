@@ -1,0 +1,21 @@
+<script>
+    var parcelas = Number(prompt("Quantas Parcelas?"))
+
+    var data = new Date();
+    var dia, mes, ano, diaZero, mesZero;
+    var lista = "";
+
+    for(var i = 1; i <= parcelas; i++){
+        data.setMonth(data.getMonth() + 1);
+        dia = data.getDate();
+        mes = data.getMonth() + 1;
+        ano = data.getFullYear();
+
+        diaZero = dia < 10 ? "0" + dia : dia;
+        mesZero = mes < 10 ? "0" + mes : mes;
+
+        lista += i + "º parcela: " + diaZero + "/" + mesZero + "/" + ano + "\n";
+    }
+
+    alert(lista);
+</script>

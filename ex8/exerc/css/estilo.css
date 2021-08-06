@@ -1,0 +1,9 @@
+img{max-width: 100%;}
+pre{font-size: 1.2em;}
+.pbutton{margin-bottom: -1.5em;}
+.oculta{display: none;}
+.exibe{display: inline;}
+.coresBrasil{color: white; background-color: red;}
+.coresPelotas{color: blue; background-color: yellow;}
+.coresFarroupilha{color: lightskyblue; background-color: white;}
+.coresNenhum{color: black; background-color: white;}

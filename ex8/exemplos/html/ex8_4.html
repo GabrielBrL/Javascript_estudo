@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Ex 8.4</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="../img/ex8_3.jpg" alt="Melância">
+            </div>
+            <div class="col-sm-8">
+                <h1>Qual o peso da Melância?</h1>
+                <p><label for="inputNome">Nome do Apostador:</label>
+                   <input type="text" id="inputNome" class="form-control" autofocus>
+                </p>
+                <p><label for="inputPeso">Peso (em gramas): </label>
+                   <input type="text" id="inputPeso" class="form-control">
+                </p>
+                <p> <input type="button" value="Apostar" id="btnApostar" class="btn btn-primary">
+                    <input type="button" value="Vencedor" id="btnVencedor" class="btn btn-warning">
+                    <input type="button" value="Limpar Dados" id="btnLimpar" class="btn btn-danger">
+                </p>
+                <pre id="outApostas"></pre>
+            </div>
+        </div>
+    </div>
+    <script src="../js/ex8_4.js"></script>
+</body>
+</html>
