@@ -49,8 +49,9 @@ function executaServico(){
         lista.shift();
         localStorage.setItem("servicos", lista.join(";"));
     }
-    mostraServico()
     servicosPendentes();
+    mostraServico()
+    if(localStorage.getItem("servicos") == 0) localStorage.removeItem("servicos");
     
 }
 var btnExecutar = document.getElementById("btnExecutar");
@@ -58,7 +59,6 @@ btnExecutar.addEventListener("click", executaServico);
 
 function mostraServico(){
     var outExecucao = document.getElementById("outExecucao");
-    var divExecucao = document.getElementById("divExecucao");
 
     var lista_serv = localStorage.getItem("servicos").split(";").slice();
 

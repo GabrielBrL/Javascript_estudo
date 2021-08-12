@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Ex 9.3</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="../img/ex9_3.jpg" class="imgProg">
+            </div>
+            <div class="col-sm-8">
+                <h1>Meus filmes favoritos</h1>
+                <p>
+                    <label for="inputTitulo">Título do Filme: </label>
+                    <input type="text" id="inputTitulo" class="form-control">
+                </p>
+                <p>
+                    <label for="inputGenero">Gênero: </label>
+                    <input type="text" id="inputGenero" class="form-control">
+                </p>
+                <p class="aDireita">
+                    <input type="button" value="Adicionar" class="btn btn-primary" id="btnAdicionar">
+                </p>
+
+                <table class="table table-striped" id="tbFilmes">
+                    <tr>
+                        <th>Títutlo do filme</th>
+                        <th>Gênero</th>
+                        <th>
+                            <label><input type="checkbox" id="ckTodos">&nbsp;Todos</label>
+                        </th>
+                    </tr>
+                </table>
+                <p class="aDireita">
+                    <input type="button" value="Excluir Selecionados" class="btn btn-danger" id="btnExcluir">
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/ex9_3.js"></script>
+</body>
+
+</html>
